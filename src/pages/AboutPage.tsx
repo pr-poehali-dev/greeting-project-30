@@ -7,11 +7,12 @@ const AboutPage = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="mb-12 text-center animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              О магазине ShopHub
+            <div className="text-5xl mb-4">🦄✨</div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+              О магазине "Обними единорога"
             </h1>
             <p className="text-xl text-muted-foreground">
-              Ваш надежный партнер в мире онлайн-шопинга
+              Дарим волшебство и радость с 2024 года
             </p>
           </div>
 
@@ -23,8 +24,8 @@ const AboutPage = () => {
                 </div>
                 <h2 className="text-2xl font-bold mb-3">Наша миссия</h2>
                 <p className="text-muted-foreground">
-                  Сделать качественные товары доступными для каждого, обеспечивая лучший сервис
-                  и удобство покупок онлайн.
+                  Дарить радость и волшебство детям и взрослым через милых плюшевых единорогов, 
+                  создавая моменты счастья в каждом доме.
                 </p>
               </CardContent>
             </Card>
@@ -36,8 +37,8 @@ const AboutPage = () => {
                 </div>
                 <h2 className="text-2xl font-bold mb-3">Наше видение</h2>
                 <p className="text-muted-foreground">
-                  Стать ведущей платформой электронной коммерции, где клиенты находят всё необходимое
-                  в одном месте.
+                  Стать любимым магазином плюшевых единорогов, где каждый найдёт своего 
+                  волшебного друга для объятий и радости.
                 </p>
               </CardContent>
             </Card>

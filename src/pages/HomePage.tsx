@@ -21,11 +21,12 @@ const HomePage = () => {
       <section className="relative bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              Добро пожаловать в ShopHub
+            <div className="text-6xl mb-4">🦄💖</div>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+              Обними единорога
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Лучшие товары по выгодным ценам с быстрой доставкой
+              Магазин волшебных плюшевых единорогов для детей и взрослых 🌈✨
             </p>
             <div className="flex gap-4 justify-center">
               <Link to="/catalog">

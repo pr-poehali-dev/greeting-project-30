@@ -17,11 +17,11 @@ const Header = ({ cartItemsCount = 0 }: HeaderProps) => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-              <Icon name="Store" size={24} className="text-white" />
+            <div className="text-3xl">
+              🦄
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              ShopHub
+            <span className="text-2xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+              Обними единорога
             </span>
           </Link>
 
