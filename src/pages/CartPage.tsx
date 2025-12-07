@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
@@ -5,17 +6,19 @@ import Icon from '@/components/ui/icon';
 import { useCart } from '@/context/CartContext';
 import { toast } from 'sonner';
 import { Link } from 'react-router-dom';
+import CheckoutDialog from '@/components/CheckoutDialog';
 
 const CartPage = () => {
   const { cart, removeFromCart, updateQuantity, getTotalPrice, clearCart } = useCart();
   const total = getTotalPrice();
+  const [checkoutOpen, setCheckoutOpen] = useState(false);
 
   const handleCheckout = () => {
     if (cart.length === 0) {
       toast.error('Корзина пуста');
       return;
     }
-    toast.success('Переход к оформлению заказа...');
+    setCheckoutOpen(true);
   };
 
   const handleClearCart = () => {
@@ -164,6 +167,7 @@ const CartPage = () => {
           </div>
         </div>
       </div>
+      <CheckoutDialog open={checkoutOpen} onOpenChange={setCheckoutOpen} />
     </div>
   );
 };
